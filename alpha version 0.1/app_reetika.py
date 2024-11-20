@@ -2,21 +2,38 @@
 import streamlit as st
 import pandas as pd
 import io
+import json 
 from ydata_profiling import ProfileReport
 
 def load_data(uploaded_file):
     """
-    Load data from various file types
+    Load data from various file types with improved JSON handling
     """
     try:
         if uploaded_file.type == 'text/csv':
             return pd.read_csv(uploaded_file)
         elif uploaded_file.type == 'application/json':
-            return pd.read_json(uploaded_file)
+            # Handle different JSON structures
+            data = json.load(uploaded_file)
+            
+            # If JSON is a dictionary with a key containing a list
+            if isinstance(data, dict):
+                for key, value in data.items():
+                    if isinstance(value, list):
+                        return pd.DataFrame(value)
+            
+            # If JSON is directly a list
+            if isinstance(data, list):
+                return pd.DataFrame(data)
+            
+            # Fallback to direct conversion
+            return pd.json_normalize(data)
+        
         elif uploaded_file.type == 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
             return pd.read_excel(uploaded_file)
         elif uploaded_file.type == 'application/octet-stream':
             return pd.read_parquet(uploaded_file)
+    
     except Exception as e:
         st.error(f"Error loading file: {e}")
         return None
