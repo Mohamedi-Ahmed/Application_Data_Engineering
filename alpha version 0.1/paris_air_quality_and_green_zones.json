@@ -1,0 +1,64 @@
+{
+    "areas": [
+        {
+            "area_name": "Montmartre",
+            "air_quality_index": 42,
+            "green_zones": 5,
+            "noise_level": "Medium",
+            "available_bike_paths": 8,
+            "electric_vehicle_charging_stations": 2,
+            "average_household_energy_consumption": "Low",
+            "renewable_energy_use_percentage": 35,
+            "public_recycling_bins": 12,
+            "community_garden_participation": 150
+        },
+        {
+            "area_name": "Marais",
+            "air_quality_index": 38,
+            "green_zones": 3,
+            "noise_level": "Low",
+            "available_bike_paths": 6,
+            "electric_vehicle_charging_stations": 4,
+            "average_household_energy_consumption": "Medium",
+            "renewable_energy_use_percentage": 40,
+            "public_recycling_bins": 10,
+            "community_garden_participation": 90
+        },
+        {
+            "area_name": "Saint-Germain-des-Pr\u00e9s",
+            "air_quality_index": 45,
+            "green_zones": 2,
+            "noise_level": "High",
+            "available_bike_paths": 4,
+            "electric_vehicle_charging_stations": 1,
+            "average_household_energy_consumption": "High",
+            "renewable_energy_use_percentage": 20,
+            "public_recycling_bins": 8,
+            "community_garden_participation": 50
+        },
+        {
+            "area_name": "Bastille",
+            "air_quality_index": 50,
+            "green_zones": 4,
+            "noise_level": "Medium",
+            "available_bike_paths": 7,
+            "electric_vehicle_charging_stations": 3,
+            "average_household_energy_consumption": "Medium",
+            "renewable_energy_use_percentage": 45,
+            "public_recycling_bins": 15,
+            "community_garden_participation": 120
+        },
+        {
+            "area_name": "La Villette",
+            "air_quality_index": 30,
+            "green_zones": 6,
+            "noise_level": "Low",
+            "available_bike_paths": 10,
+            "electric_vehicle_charging_stations": 5,
+            "average_household_energy_consumption": "Low",
+            "renewable_energy_use_percentage": 55,
+            "public_recycling_bins": 20,
+            "community_garden_participation": 200
+        }
+    ]
+}
