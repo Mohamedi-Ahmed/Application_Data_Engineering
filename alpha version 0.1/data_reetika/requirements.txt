@@ -1,0 +1,6 @@
+streamlit==1.29.0
+pandas==2.1.4
+numpy==1.26.2
+openpyxl==3.1.2
+pyarrow==14.0.1
+ydata-profiling # Updated alternative to pandas-profiling

@@ -10,9 +10,9 @@ from streamlit_folium import st_folium
 @st.cache_data
 def load_data():
     # Load CSV data
-    locations_df = pl.read_csv('paris_green_city_locations.csv')
+    locations_df = pl.read_csv('./data_daria/paris_green_city_locations.csv')
     # Load JSON data
-    with open('paris_air_quality_and_green_zones.json') as f:
+    with open('./data_daria/paris_air_quality_and_green_zones.json') as f:
         air_quality_data = json.load(f)
     return locations_df, air_quality_data
 
