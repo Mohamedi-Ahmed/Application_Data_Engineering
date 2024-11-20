@@ -1,7 +1,8 @@
 # Application Data Engineering
 
 ## Description
-Cette application permet de lire et d'explorer des fichiers aux formats CSV, TSV et Parquet. Elle fournit une interface intuitive pour visualiser les données et obtenir des informations détaillées sur la qualité des colonnes (types, valeurs nulles, etc.).
+Cette application a pour but d'être un pipeline modulable pour tout le processus ETL qu'un data engineer est amené à rencontrer.
+Il sera connecté à une base de donnée cloud où seront stockées les données.
 
 ---
 
@@ -32,6 +33,8 @@ Visualiser la maquette : [Lien vers diagrams.net](https://app.diagrams.net/#G1qQ
 Accéder à la User Story : [Lien vers Google Sheets](https://docs.google.com/spreadsheets/d/1UgfhhrRbLcOhaKsAVYGKv_DPYolM3URTRKUDTwrMPSE/edit?usp=sharing)
 
 ---
+
+# Partie Mini-Application (version 0):
 
 ## Description de la mini-application
 Cette mini-application permet de lire et d'explorer des fichiers aux formats CSV, TSV et Parquet. Elle fournit une interface intuitive pour visualiser les données et obtenir des informations détaillées sur la qualité des colonnes (types, valeurs nulles, etc.).
