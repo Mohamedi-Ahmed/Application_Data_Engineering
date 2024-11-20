@@ -60,5 +60,5 @@ Cette mini-application permet de lire et d'explorer des fichiers aux formats CSV
   pip install streamlit polars pyarrow plotly
 
 ### Ligne de commande :
-Dans un terminal : 
-au niveau du fichier app.py : streamlit run app.py
+Dans un terminal :  
+au niveau du fichier app.py :  streamlit run app.py
